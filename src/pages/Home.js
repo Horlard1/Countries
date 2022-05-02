@@ -57,9 +57,9 @@ function Home({isDark}) {
   return (
     <div className='mt-10'>
         <div className=' mt-5 w-5/6 mx-auto '>
-            <div className='mb-10 flex lg:flex-row md:flex-row sm:flex-col justify-between'>
-                <input className={`w-2/5  py-2 outline-0 px-5 rounded ${isDark ? "header-dark" :""}`} onChange={(e)=> setCountryName(e.target.value)} placeholder='Search for a country...' />
-                <select className={`lg:w-1/6 md:w-1/5 sm:w-1/4 sm:mt-5 outline-0 py-2 px-5 rounded ${isDark ? "header-dark" :""}`} value={regionArea} onChange={(e)=> setRegionArea(e.target.value)} placeholder='Filter by Region'>
+            <div className='mb-10 flex flex-col md:flex-row  justify-between'>
+                <input className={` w-3/4 md:w-2/5  py-2 outline-0 px-5 rounded ${isDark ? "header-dark" :""}`} onChange={(e)=> setCountryName(e.target.value)} placeholder='Search for a country...' />
+                <select className={`md:w-1/5 w-1/2 mt-5 md:mt-0 outline-0 py-2 px-5 rounded ${isDark ? "header-dark" :""}`} value={regionArea} onChange={(e)=> setRegionArea(e.target.value)} placeholder='Filter by Region'>
                     <option value="">Filter by Region</option>
                     <option>Africa</option>
                     <option>Americas</option>

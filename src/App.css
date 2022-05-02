@@ -6,7 +6,6 @@
   max-width: 1440px;
   margin: 0 auto;
   @apply w-full
-  
 }
 
 .dark{
@@ -44,8 +43,16 @@
   height: 350px; 
   object-fit:cover;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
     .flag{
       width: 100%;
+    }
+    .button{
+      width: 20%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .button{
+      width: 50%;
     }
 }
